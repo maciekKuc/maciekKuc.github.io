@@ -1,0 +1,87 @@
+body {
+  margin: auto;
+  width: 75%;
+  border: solid black 2px;
+}
+
+div{
+  width:100%;
+}
+a{
+  align:center;
+}
+.me h5 {
+  font-family: 'Great Vibes';
+  font-size: 30px;
+  align-items:center;
+  margin:25px;
+}
+.pasek a {
+  display:inline-block;
+  float:right;
+  margin: 24px 5px 24px 5px;
+  }
+.pasek {
+  height: 80px;
+  width: inherit;
+   position:fixed;
+  z-index: 2;
+  /*background: linear-gradient(rgb(130, 138, 229));*/
+  background: #d0e4f7; /* Old browsers */
+background: -moz-linear-gradient(top, #d0e4f7 0%, #73b1e7 24%, #0a77d5 50%, #539fe1 79%, #87bcea 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=0 );
+  top:0px;
+  
+}
+.container-fluid {
+  padding: 0 0 100px 0;
+}
+
+.me{
+  height:auto;
+  width:350px;
+    display:inline-block;
+  }
+p{
+  font-family: "Bodoni MT";
+}
+h2 {
+  font-family: "Big Caslon";
+ }
+.par{
+  margin: 0 20% 20% 20%;
+}
+div img{
+  margin: 0 0 0 100px;
+}
+#home{
+  position:relative;
+  top:80px;
+  text-align:center;
+  }
+#about{
+  position: relative;
+  top:80px;
+}
+.btn-mein{
+  width:100px;
+  margin:5px;
+}
+.nav a{
+  display:block;
+}
+#about img{
+  border-radius:50%;
+  min-width:300px;
+  max-width:500px;
+  }
+a {
+  text-transform: uppercase;
+  
+}
+a:hover {
+  text-decoration: none;
+  color: pink;
+}
