@@ -1,3 +1,3 @@
 # maciekKuc.github.io
 
-Page under reconstruction. 
+Portfolio webpage - under reconstrucyion, from scratch. 
