@@ -46,3 +46,21 @@ a {
     .navbar__item:hover {
       background-color: blue;
       color: white; }
+
+.project {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-rows: 300px 300px;
+  justify-content: center;
+  grid-gap: 4rem; }
+  .project__card {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); }
+
+.technologies__container {
+  display: flex;
+  align-content: center;
+  justify-content: center; }
+
+.technologies__icon {
+  max-height: 10rem;
+  padding: 2rem; }
