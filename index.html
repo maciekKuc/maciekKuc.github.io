@@ -6,69 +6,82 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC|Roboto:300,400,700" rel="stylesheet">
 
-  <title>Maciej Kućmierowski Portfolio</title>
+  <heading-big>Maciej Kućmierowski Portfolio</heading-big>
 </head>
 <body>
   <nav class="navbar">
     <p class="navbar__name">MK</p>
     <ul class="navbar__menu">
       <li class="navbar__item"><a href="#home">home</a></li>
-      <li class="navbar__item"><a href="#projekty">projekty</a></li>
-      <li class="navbar__item"><a href="#o mnie">o mnie</a></li>
-      <li class="navbar__item"><a href="#technologie">technologie</a></li>
-      <li class="navbar__item"><a href="#kontakt">kontakt</a></li>
+      <li class="navbar__item"><a href="#projects">projekty</a></li>
+      <li class="navbar__item"><a href="#about">o mnie</a></li>
+      <li class="navbar__item"><a href="#technologies">technologie</a></li>
+      <li class="navbar__item"><a href="#contact">kontakt</a></li>
     </ul>
   </nav>
-  <div class="home" id="home">
-    
+  <main class="main">
+    <div class="home mb-hg" id="home">
+    <div class="home__card">
+      <img src="img/profilowe.png" alt="" class="home__photo">
+    </div>
+    <div class="home__card">
+      <h1 class="heading-big">O mnie</h1>
+      <p class="paragraph">Witam, nazywam się Maciek i jestem początkującym Front End developerem. Swoją naukę Front Endu rozpocząłem trochę ponad rok temu, od tego czasu poznałem takie techologie jak np. CSS3, SASS, ES6 oraz inne wymienione poniżej. </p>
+    </div>
   </div>
-  <div class="project" id="projects">
+  <div class="project mb-hg" id="projects">
     <div class="project__card">
-      <h1 class="project__title">Landing page</h1>
-      <p class="paragraph paragraph--black"></p>
+      <h1 class="heading-big">Landing page</h1>
+      <p class="paragraph"></p>
     </div>
     <div class="project__card">
-      <h1 class="project__title">Camry showdown</h1>
-      <p class="paragraph paragraph--black"></p>
+      <h1 class="heading-big">Camry showdown</h1>
+      <p class="paragraph"></p>
     </div>
     <div class="project__card">
-      <h1 class="project__title">Weather App</h1>
-      <p class="paragraph paragraph--black"></p>
+      <h1 class="heading-big">Weather App</h1>
+      <p class="paragraph"></p>
     </div>
     <div class="project__card">
-      <h1 class="project__title">Weekly challenge number 2</h1>
-      <p class="paragraph paragraph--black"></p>
+      <h1 class="heading-big">Weekly challenge number 2</h1>
+      <p class="paragraph"></p>
     </div>
     <div class="project__card">
-      <h1 class="project__title">Personal portfolio</h1>
-      <p class="paragraph paragraph--black"></p>
+      <h1 class="heading-big">Personal portfolio</h1>
+      <p class="paragraph"></p>
     </div>
     <div class="project__card">
-      <h1 class="project__title">PV App</h1>
-      <p class="paragraph paragraph--black"></p>
+      <h1 class="heading-big">PV App</h1>
+      <p class="paragraph"></p>
     </div>
   </div>
   <div class="about" id="about">
     
   </div>
-  <div class="technologies" id="technologies">
+  <div class="technologies mb-hg" id="technologies">
     <h2 class="heading">Technologie poznane</h2>
     <div class="technologies__container">
       <img src="img/html5.svg" class="technologies__icon" alt="">
       <img src="img/css-3.svg" class="technologies__icon" alt="">
       <img src="img/sass.svg" class="technologies__icon" alt="">
       <img src="img/javascript.svg" class="technologies__icon" alt="">
+      <img src="img/webpack.svg" class="technologies__icon" alt="">
+      <img src="img/JQuery.svg" class="technologies__icon" alt="">
     </div>
     <h2 class="heading">Techologie, których aktualnie się uczę</h2>
+    <div class="technologies__container">
+      <img src="img/react.svg" class="technologies__icon" alt="">
+    </div>
   </div>
-  <div class="contact" id="contact">
-    
+  <div class="contact mb-hg" id="contact">
+    <h2 class="heading-small">E-mail:</h2>
+    <p class="paragraph">maciekkuc1@gmail.com</p>
   </div>
-  <div class="sidebar">
-    
-  </div>
+  </main>
+  
+
   <footer class="footer">
-    <div class="footer__credit">Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/"           title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"          title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    <div class="footer__credit">Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" heading-big="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/"           heading-big="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"          heading-big="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
   </footer>
 </body>
 </html>
