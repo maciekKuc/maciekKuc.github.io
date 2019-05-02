@@ -3,10 +3,18 @@
 	grid-template-columns: 1fr 1fr;
 
 	&__card{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 
+		&--text{
+			width: 80%;
+		}
 	}
 
 	&__photo{
-
+		max-height: 450px;
+		-webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+		clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 	}
 }

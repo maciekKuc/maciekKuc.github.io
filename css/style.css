@@ -8,7 +8,8 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  font-family: Roboto; }
+  font-family: Roboto;
+  scroll-behavior: smooth; }
 
 a {
   color: inherit;
@@ -18,11 +19,14 @@ a {
   width: 1300px;
   margin: 0 auto; }
 
-.heading-small {
+.heading--small {
   font-size: 1.9rem; }
 
-.heading-big {
+.heading--big {
   font-size: 2.5rem; }
+
+.heading--center {
+  text-align: center; }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -48,6 +52,16 @@ a {
 .home {
   display: grid;
   grid-template-columns: 1fr 1fr; }
+  .home__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .home__card--text {
+      width: 80%; }
+  .home__photo {
+    max-height: 450px;
+    -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); }
 
 .navbar {
   display: flex;
@@ -84,6 +98,7 @@ a {
   .project__card {
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
     background-size: contain;
+    background-position: 0 3rem;
     background-repeat: no-repeat;
     position: relative;
     border-radius: 5px; }
@@ -109,7 +124,7 @@ a {
       top: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: rgba(0, 0, 0, 0.7);
       z-index: 10;
       border-radius: 5px; }
   .project__icon {

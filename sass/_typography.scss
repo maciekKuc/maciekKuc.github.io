@@ -1,10 +1,20 @@
-.heading-small{
-	font-size: 1.9rem;
+.heading{
+
+	&--small{
+		font-size: 1.9rem;
+	}
+
+	&--big{
+		font-size: 2.5rem;
+	}
+
+	&--center{
+		text-align: center;
+	}
 }
 
-.heading-big{
-	font-size: 2.5rem;
-}
+
+
 
 .paragraph{
 	font-size: 1.6rem;
