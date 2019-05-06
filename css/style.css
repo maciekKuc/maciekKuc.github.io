@@ -49,6 +49,9 @@ a {
 .mt-hg {
   margin-top: 9rem; }
 
+.mb-lg {
+  margin-top: 4rem; }
+
 .home {
   display: grid;
   grid-template-columns: 1fr 1fr; }
@@ -62,6 +65,36 @@ a {
     max-height: 450px;
     -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); }
+
+.footer {
+  background-color: #cca43b;
+  color: #FFF;
+  padding: 3rem;
+  text-align: center; }
+  .footer__contact {
+    height: 10%; }
+  .footer__icon {
+    width: 2rem;
+    transform: translateY(30%); }
+  .footer__credit {
+    position: fixed;
+    bottom: 0.1rem;
+    left: 50%;
+    transform: translateX(-50%); }
+  .footer__container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-right: 0.5rem; }
+  .footer__button {
+    background-color: #242f40;
+    width: 10rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    text-align: center; }
+    .footer__button:not(:last-child) {
+      margin-right: 2rem; }
 
 .navbar {
   display: flex;
