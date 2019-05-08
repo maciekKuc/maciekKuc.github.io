@@ -1,7 +1,7 @@
 .project{
 	display: grid;
 	grid-template-columns: repeat(3, minmax(200px, 1fr));
-	grid-template-rows: 300px 300px;
+	grid-template-rows: 270px 270px;
 	justify-content: center;
 	grid-gap: 4rem;
 	
@@ -13,9 +13,11 @@
 		background-repeat: no-repeat;
 		position: relative;
 		border-radius: 5px;
+		background-color: #fff;
+		background-position: bottom;
 
 		&:nth-child(1){
-			background-image: url('../img/camry_card.jpg');
+			background-image: url('../img/Landing Page.png');
 		}
 
 		&:nth-child(2){
@@ -23,11 +25,11 @@
 		}
 
 		&:nth-child(3){
-			background-image: url('../img/camry_card.jpg');
+			background-image: url('../img/weather.jpg');
 		}
 
 		&:nth-child(4){
-			background-image: url('../img/camry_card.jpg');
+			background-image: url('../img/challenge2.png');
 		}
 
 		&:nth-child(5){
@@ -35,14 +37,14 @@
 		}
 
 		&:nth-child(6){
-			background-image: url('../img/camry_card.jpg');
+			background-image: url('../img/PV.png');
 		}
 
 		&--hidden{
 			display: none;
-			grid-template-columns: repeat(2, min-content);
-			align-content: end;
-			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
 			grid-gap: 2rem;
 			position: absolute;
 			top: 0; 
@@ -54,8 +56,16 @@
 		}
 	}
 
-	&__link{
+	&__description{
+		animation: slide .5s;
+	}
 
+	&__links{
+		display: grid;
+		grid-template-columns: repeat(2, max-content);
+		align-content: end;
+		justify-content: center;
+		grid-gap: 2rem;
 	}
 
 	&__icon{
@@ -74,6 +84,6 @@
 	}
 
 	&__card:hover .project__card--hidden{
-		display: grid;
+		display: flex;
 	}
 }

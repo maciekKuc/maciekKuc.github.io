@@ -17,7 +17,19 @@ a {
 
 .main {
   width: 1300px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 5rem;
+  background-color: #e5e5e5; }
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%); }
+  80% {
+    opacity: 1; }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
 
 .heading--small {
   font-size: 1.9rem; }
@@ -29,7 +41,13 @@ a {
   text-align: center; }
 
 .paragraph {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  line-height: 2; }
+  .paragraph--center {
+    text-align: center; }
+
+.text--white {
+  color: #FFF; }
 
 .mb-sm {
   margin-bottom: 2rem; }
@@ -49,8 +67,11 @@ a {
 .mt-hg {
   margin-top: 9rem; }
 
-.mb-lg {
+.mt-lg {
   margin-top: 4rem; }
+
+.mt-sm {
+  margin-top: 2rem; }
 
 .home {
   display: grid;
@@ -66,6 +87,9 @@ a {
     -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); }
 
+.about {
+  padding: 0 15rem; }
+
 .footer {
   background-color: #cca43b;
   color: #FFF;
@@ -77,10 +101,7 @@ a {
     width: 2rem;
     transform: translateY(30%); }
   .footer__credit {
-    position: fixed;
-    bottom: 0.1rem;
-    left: 50%;
-    transform: translateX(-50%); }
+    transform: translateY(-30%); }
   .footer__container {
     display: flex;
     justify-content: center;
@@ -125,7 +146,7 @@ a {
 .project {
   display: grid;
   grid-template-columns: repeat(3, minmax(200px, 1fr));
-  grid-template-rows: 300px 300px;
+  grid-template-rows: 270px 270px;
   justify-content: center;
   grid-gap: 4rem; }
   .project__card {
@@ -134,24 +155,26 @@ a {
     background-position: 0 3rem;
     background-repeat: no-repeat;
     position: relative;
-    border-radius: 5px; }
+    border-radius: 5px;
+    background-color: #fff;
+    background-position: bottom; }
     .project__card:nth-child(1) {
-      background-image: url("../img/camry_card.jpg"); }
+      background-image: url("../img/Landing Page.png"); }
     .project__card:nth-child(2) {
       background-image: url("../img/camry_card.jpg"); }
     .project__card:nth-child(3) {
-      background-image: url("../img/camry_card.jpg"); }
+      background-image: url("../img/weather.jpg"); }
     .project__card:nth-child(4) {
-      background-image: url("../img/camry_card.jpg"); }
+      background-image: url("../img/challenge2.png"); }
     .project__card:nth-child(5) {
       background-image: url("../img/camry_card.jpg"); }
     .project__card:nth-child(6) {
-      background-image: url("../img/camry_card.jpg"); }
+      background-image: url("../img/PV.png"); }
     .project__card--hidden {
       display: none;
-      grid-template-columns: repeat(2, min-content);
-      align-content: end;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
       grid-gap: 2rem;
       position: absolute;
       top: 0;
@@ -160,6 +183,14 @@ a {
       background-color: rgba(0, 0, 0, 0.7);
       z-index: 10;
       border-radius: 5px; }
+  .project__description {
+    animation: slide .5s; }
+  .project__links {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    align-content: end;
+    justify-content: center;
+    grid-gap: 2rem; }
   .project__icon {
     width: 3rem;
     height: 3rem;
@@ -170,7 +201,7 @@ a {
     .project__icon--data {
       -webkit-mask: url("../img/data.svg") center/contain no-repeat; }
   .project__card:hover .project__card--hidden {
-    display: grid; }
+    display: flex; }
 
 .technologies__container {
   display: flex;

@@ -2,6 +2,7 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 
+
 	&__card{
 		display: flex;
 		flex-direction: column;
@@ -17,4 +18,8 @@
 		-webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 		clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 	}
+}
+
+.about{
+	padding: 0 15rem;
 }
