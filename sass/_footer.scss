@@ -1,5 +1,5 @@
 .footer{
-	background-color: $orange;
+	background-color: $light-blue;
 	color: $text--white;
 	padding: 3rem;
 	text-align: center;
@@ -14,11 +14,12 @@
 
 	&__icon{
 		width: 2rem;
-		transform: translateY(30%);
+		padding: .2rem;
+		transform: translateY(20%);
 	}
 
 	&__credit{
-		transform: translateY(-30%);
+		transform: translateY(70%);
 		
 	}
 
@@ -27,19 +28,23 @@
 		justify-content: center;
 		align-content: center;
 		margin-right: 0.5rem;	
-		
+		transform: translateY(-20%);
 	}
 
 	&__button{
-		background-color: $bgc--dark;
+		background-color: $button;
 		width: 10rem;
 		padding: 1rem;
-		font-size: 1.3rem;
+		font-size: 1.4rem;
 		border-radius: 5px;
 		text-align: center;
 
 		&:not(:last-child){
 			margin-right: 2rem;
+		}
+
+		&:hover{
+			background-color: $button--light;
 		}
 	}
 }

@@ -1,8 +1,12 @@
 $bgc--basic: #e5e5e5;
-$bgc--dark: #242f40;
+
+$button: #8dc435;
+$button--light: #a9dd56;
 
 $text--white: #FFF;
-$orange: #cca43b;
+
+$light-blue: #5ADAFD;
+$hover-blue: #8DD6F9;
 
 *,
 *::before,
@@ -44,5 +48,37 @@ a{
 	100%{
 		opacity: 1;
 		transform: translateY(0);
+	}
+}
+
+@keyframes moveRight{
+	0%{
+		opacity:0;
+		transform: translateX(-100%);
+	}
+
+	80%{
+		opacity:1;
+	}
+
+	100%{
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes moveLeft{
+	0%{
+		opacity:0;
+		transform: translateX(100%);
+	}
+
+	80%{
+		opacity:1;
+	}
+
+	100%{
+		opacity: 1;
+		transform: translateX(0);
 	}
 }

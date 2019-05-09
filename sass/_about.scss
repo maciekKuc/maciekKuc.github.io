@@ -11,6 +11,14 @@
 		&--text{
 			width: 80%;
 		}
+
+		&:first-child{
+			animation: moveRight 1s;
+		}
+
+		&:last-child{
+			animation: moveLeft 1s;
+		}
 	}
 
 	&__photo{

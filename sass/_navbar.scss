@@ -27,8 +27,8 @@
 		padding: 2rem; 
 
 		&:hover{
-			background-color: blue;
-			color: white;
+			background-color: $hover-blue;
+			color: $text--white;
 		}
 	}
 }
