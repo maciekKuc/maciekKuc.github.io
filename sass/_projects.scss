@@ -34,7 +34,7 @@
 		}
 
 		&:nth-child(5){
-			background-image: url('../img/camry_card.jpg');
+			background-image: url('../img/portfolio.png');
 		}
 
 		&:nth-child(6){
@@ -55,10 +55,20 @@
 			z-index: 10;
 			border-radius: 5px;
 		}
+
+		@media screen and (max-width: 650px){
+			height: 45vw;
+		}
 	}
 
 	&__description{
 		animation: slide .5s;
+
+		.paragraph{
+			@media screen and (max-width: 650px){
+				display: none;
+			}
+		}
 	}
 
 	&__links{
@@ -71,6 +81,8 @@
 		.paragraph{
 			transform: translateY(15%);
 		}
+
+		
 	}
 
 	&__icon{
@@ -90,6 +102,10 @@
 
 	&__list{
 		list-style: url('../img/light-bulb.svg');
+
+		@media screen and (max-width: 650px){
+			display: none;
+		}
 	}
 
 	&__item{
