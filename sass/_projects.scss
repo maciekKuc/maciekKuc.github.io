@@ -1,0 +1,119 @@
+.project{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+	
+	justify-content: center;
+	grid-gap: 4rem;
+	
+
+	&__card{
+		height: 300px;
+		box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+		background-size: contain;
+		background-position: 0 3rem;
+		background-repeat: no-repeat;
+		position: relative;
+		border-radius: 5px;
+		background-color: #fff;
+		background-position: center;
+
+		&:nth-child(1){
+			background-image: url('../img/Landing Page.png');
+		}
+
+		&:nth-child(2){
+			background-image: url('../img/camry_card.jpg');
+		}
+
+		&:nth-child(3){
+			background-image: url('../img/weather.jpg');
+		}
+
+		&:nth-child(4){
+			background-image: url('../img/challenge2.png');
+		}
+
+		&:nth-child(5){
+			background-image: url('../img/portfolio.png');
+		}
+
+		&:nth-child(6){
+			background-image: url('../img/PV.png');
+		}
+
+		&--hidden{
+			display: none;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			grid-gap: 2rem;
+			position: absolute;
+			top: 0; 
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, .7);
+			z-index: 10;
+			border-radius: 5px;
+		}
+
+		@media screen and (max-width: 650px){
+			height: 45vw;
+		}
+	}
+
+	&__description{
+		animation: slide .5s;
+
+		.paragraph{
+			@media screen and (max-width: 650px){
+				display: none;
+			}
+		}
+	}
+
+	&__links{
+		display: grid;
+		grid-template-columns: repeat(2, max-content);
+		align-content: end;
+		justify-content: center;
+		grid-gap: 2rem;
+
+		.paragraph{
+			transform: translateY(15%);
+		}
+
+		
+	}
+
+	&__icon{
+		width: 3rem;
+		height: 3rem;
+		background: white;
+		padding-bottom: 10rem;
+
+		&--code{
+			-webkit-mask: url('../img/code.svg') center / contain no-repeat;
+		}
+
+		&--data{
+			-webkit-mask: url('../img/data.svg') center / contain no-repeat;
+		}
+	}
+
+	&__list{
+		list-style: url('../img/light-bulb.svg');
+
+		@media screen and (max-width: 650px){
+			display: none;
+		}
+	}
+
+	&__item{
+		font-size: 1.6rem;
+		padding: .2rem;
+	}
+
+	&__card:hover .project__card--hidden{
+		display: flex;
+	}
+}

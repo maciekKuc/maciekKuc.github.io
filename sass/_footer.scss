@@ -1,0 +1,57 @@
+.footer{
+	width: 100%;
+	background-color: $light-blue;
+	color: $text--white;
+	padding: 3rem;
+	text-align: center;
+
+	&__contact{
+		height: 10%;
+	}
+
+	&__link{
+
+	}
+
+	&__icon{
+		width: 2.5rem;
+		padding: .2rem;
+		transform: translateY(25%);
+	}
+
+	&__credit{
+		transform: translateY(70%);
+		
+	}
+
+	&__container{
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		margin-right: 0.5rem;	
+		transform: translateY(-20%);
+	}
+
+	&__button{
+		background-color: $button;
+		width: 12rem;
+		padding: 1rem;
+		font-size: 1.4rem;
+		font-weight: 500;
+		border-radius: 5px;
+		text-align: center;
+
+		&:not(:last-child){
+			margin-right: 2rem;
+		}
+
+		&:hover{
+			background-color: $button--light;
+			color: $text--dark;
+		}
+	}
+}
+
+.contact{
+
+}

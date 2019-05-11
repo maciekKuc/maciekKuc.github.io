@@ -1,74 +1,185 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Maciej Kućmierowski - My Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="styl.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Great+Vibes|Mr+De+Haviland|Norican|Pacifico|Qwigley|Sacramento">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC|Roboto:300,400,700" rel="stylesheet">
+
+  <title>Maciej Kućmierowski Portfolio</title>
 </head>
-<body class="jumbotron">
-  <!--Pasek nawigacyjny -->
-  <div class="pasek container">
-    
-    <div class="me"><h5>Maciej Kućmierowski</h5></div>      <a href="#portfolio"><button class='btn btn-primary'>Portfolio</button></a>  <a href="#contact"><button class='btn btn-primary'>Contact me</button></a>
-    <a href="#about"><button class='btn btn-primary'>About me</button></a>
-    <a href="#home"><button class='btn btn-primary'>HOME</button>       </a>
-  </div> 
-      
-   <!-- Wstęp/home-->
-  
-  <div id="home" class="container-fluid">
-    <div class="row">
-      <div >
-    <h2>Welcome</h2>
-    <p>Welcome on my personal page. You will probably find it a bit empty, as i'm just starting my web development experience. But i promise more will come soon.</p>
-      </div>
-      
+<body>
+  <nav class="navbar">
+    <p class="navbar__name">MK</p>
+    <ul class="navbar__menu">
+      <li class="navbar__item"><a href="#home">home</a></li>
+      <li class="navbar__item"><a href="#about">o mnie</a></li>
+      <li class="navbar__item"><a href="#projects">projekty</a></li>
+      <li class="navbar__item"><a href="#technologies">technologie</a></li>
+      <li class="navbar__item"><a href="#contact">kontakt</a></li>
+    </ul>
+    <div class="navbar__button">
+      <div class="navbar__burger"></div>
     </div>
-  </div>
-  
-  <!-- O mnie-->
-  <div id="about" class='container-fluid'>
-    <h2>About me:</h2>
-    <div class="row">
-      <div class="col-md-6">
-    
-    <img src='https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/25299047_1634613786595755_2621877412565979106_n.jpg?oh=0b3ce455d6b5c7cd9909504973a8de8b&oe=5AE21572' class='ja'>
-  </div>
-      
-      <div class="col-md-6">
-        <p class="par">As you already guesed, i'm the one on the picture left. I'm an electrical engineer with some experience with automation and grid systems. I've recently started to learn coding with a focus on front end development. From my academics i have some basic experience with C/C++ and Assembly.</p>
+  </nav>
+  <main class="main mt-hg">
+    <section class="home mb-hg" id="home">
+      <div class="home__card">
+        <img src="img/profilowe.png" alt="" class="home__photo">
       </div>
+      <div class="home__card home__card--text">
+        <h1 class="heading--big mb-md">Witam.</h1>
+        <p class="paragraph">Nazywam się Maciek i jestem początkującym Front End developerem, więcej o sobie w zakładce O MNIE. Strona, którą w tej chwili oglądasz ma na celu przybliżenie moich dotychczasowych prac, które znajdziesz w zakładce PROJEKTY. </p>
+      </div>
+    </section>
+    <section class="about mb-hg" id="about">
+      <h1 class="heading--big mb-md">O mnie</h1>
+      <p class="paragraph">Pierwsze kroki związane z programowaniem stawiałem w technikum z językiem Asembly. Jako kolejny krok na ścieżce edukacji wybrałem studia na kierunku Elektrotechnika, choć kierunek nie jest bezpośrednio związany z informatyką oraz programowaniem, poznałem tam podstawy języka C. Swoją naukę Front Endu rozpocząłem trochę ponad rok temu, korzystając z kursów internetowych oraz dokumentacji poszczególnych technologii. Podczas czasu poświęconego nauce poznałem takie techologie jak np. CSS3, SASS, ES6 oraz inne wymienione poniżej. </p>
+    </section>
+    <section class="project mb-hg" id="projects">
+      <div class="project__card">
+        <div class="project__card--hidden">
+          <div class="project__description text--white">
+            <h1 class="heading--big heading--center mt-sm">Landing page</h1>
+            <p class="paragraph ">Tech stack:</p>
+            <ul class="project__list">
+              <li class="project__item">Sass</li>
+              <li class="project__item">ES6</li>
+              <li class="project__item">Webpack</li>
+              <li class="project__item">Babel</li>
+              <li class="project__item">Swiper</li>
+            </ul>
+          </div>
+          <div class="project__links">
+            <a href="https://github.com/maciekKuc/landing_page" target="_blank" class="project__link project__icon project__icon--code"></a>
+            <a href="https://maciekkuc.github.io/landing_page/" target="_blank" class="project__link project__icon project__icon--data"></a>
+          </div>
+        </div>
+      </div>
+      <div class="project__card">
+        <div class="project__card--hidden">
+          <div class="project__description text--white">
+            <h1 class="heading--big heading--center mt-sm">Camry showdown</h1>
+            <p class="paragraph ">Tech stack:</p>
+            <ul class="project__list">
+              <li class="project__item">HTML5</li>
+              <li class="project__item">CSS3</li>
+              <li class="project__item">Javascript</li>
+            </ul>
+          </div>
+          <div class="project__links">
+            <a href="https://github.com/maciekKuc/camry_showdown" target="_blank" class="project__link project__icon project__icon--code"></a>
+          <a href="https://maciekkuc.github.io/camry_showdown/" target="_blank" class="project__link project__icon project__icon--data"></a>
+          </div>
+        </div>
+      </div>
+      <div class="project__card">
+        <div class="project__card--hidden">
+          <div class="project__description text--white">
+            <h1 class="heading--big heading--center mt-sm">Weather App</h1>
+            <p class="paragraph ">Tech stack:</p>
+            <ul class="project__list">
+              <li class="project__item">Axios</li>
+              <li class="project__item">ES6</li>
+              <li class="project__item">Webpack</li>
+              <li class="project__item">Babel</li>
+              <li class="project__item">Bootstrap</li>
+            </ul>
+          </div>
+          <div class="project__links">
+            <a href="https://github.com/maciekKuc/weatherAPP" target="_blank" class="project__icon project__icon--code"></a>
+            <a href="http://warm-bubble.surge.sh/" target="_blank" class="project__icon project__icon--data"></a>
+          </div>
+        </div>
+      </div>
+      <div class="project__card">      
+        <div class="project__card--hidden">
+          <div class="project__description text--white">
+            <h1 class="heading--big heading--center mt-sm">Weekly challenge<br>No. 2</h1>
+            <p class="paragraph ">Tech stack:</p>
+            <ul class="project__list">
+              <li class="project__item">HTML5</li>
+              <li class="project__item">CSS3</li>
+              <li class="project__item">Javascript</li>
+            </ul>
+          </div>
+          <div class="project__links">
+            <a href="https://github.com/maciekKuc/weekly_challenges/tree/master/second_chalenge" target="_blank" class="project__icon project__icon--code"></a>
+            <a href="http://blue-eyed-curtain.surge.sh/" target="_blank" class="project__icon project__icon--data"></a>
+          </div>
+        </div>
+      </div>
+      <div class="project__card">
+        <div class="project__card--hidden">
+          <div class="project__description text--white">
+            <h1 class="heading--big heading--center mt-sm">Personal portfolio</h1>
+            <p class="paragraph ">Tech stack:</p>
+            <ul class="project__list">
+              <li class="project__item">HTML5</li>
+              <li class="project__item">Sass</li>
+              <li class="project__item">Javascript</li>
+            </ul>
+          </div>
+          <div class="project__links">
+            <a href="https://github.com/maciekKuc/maciekKuc.github.io/tree/master" target="_blank" class="project__icon project__icon--code"></a>
+            <a href="#" class="project__icon project__icon--data"></a>
+          </div>
+        </div>
+      </div>
+      <div class="project__card">
+        <div class="project__card--hidden">
+          <div class="project__description text--white">
+            <h1 class="heading--big heading--center mt-sm">PV App</h1>
+            <p class="paragraph ">Tech stack:</p>
+            <ul class="project__list">
+              <li class="project__item">Axios</li>
+              <li class="project__item">React</li>
+              <li class="project__item">TDB...</li>
+            </ul>
+          </div>
+          <div class="project__links">
+            <a href="https://github.com/maciekKuc/PV-App" target="_blank" class="project__icon project__icon--code"></a>
+            <p class="paragraph text--white text--center">Demo<br>Coming Soon!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="technologies mb-hg" id="technologies">
+      <h2 class="heading--small mb-md">Technologie poznane</h2>
+      <div class="technologies__container mb-md">
+        <img src="img/html5.svg" class="technologies__icon" alt="html5 svg logo">
+        <img src="img/css-3.svg" class="technologies__icon" alt="css3 svg logo">
+        <img src="img/sass.svg" class="technologies__icon" alt="sass svg logo">
+        <img src="img/javascript.svg" class="technologies__icon" alt="javascript svg logo">
+        <img src="img/webpack.svg" class="technologies__icon" alt="webpack svg logo">
+        <img src="img/JQuery.svg" class="technologies__icon" alt="jquery svg logo">
+      </div>
+      <h2 class="heading--small mb-md">Technologie, których aktualnie się uczę</h2>
+      <div class="technologies__container">
+        <img src="img/react.svg" class="technologies__icon" alt="react svg logo">
+      </div>
+    </section>
+    
+  </main>
+  
+
+  <footer class="footer">
+    <h2 class="heading--big">Kontakt:</h2>
+    <div class="footer__contact mb-hg" id="contact">
+      <p class="paragraph"><a href="mailto:maciekkuc1@gmail.com" class="footer__link"><img src="img/mail.svg" class="footer__icon" alt="mail icon"> maciekkuc1@gmail.com</a></p>
     </div>
-    
-  <!-- Portfolio-->
-  <div id="portfolio" class="container-fluid">
-    <h2>Portfolio</h2>
-    <div>
-      <h3>Coding:</h3>
-      <ul>
-        <li><a href="https://codepen.io/Kucm/full/QaazVw/" target="_blank">Nicola Tesla's tribute page</a></li>
-        <li>I'm just starting</li>
-        <li></li>
-        <li></li>
-      </ul>
-    </div>   
-  </div>
-  <!-- Kontakt-->
-  
-  <div id="contact" class="container-fluid">
-    <h2><a href='mailto:maciekkuc1@gmail.com'>maciekkuc1@gmail.com</a></h2>
-    <div class='row'>
-      <div class=col-md-10></div>
-      
-    <div class='nav col-md-2'>
-      <a href="https://www.linkedin.com/in/maciej-ku%C4%87mierowski-aaaa87b9/" target="_blank"><button class='btn btn-success btn-mein'>       <i class="fa fa-linkedin fa-fw"></i>LinkedIn</button></a>
-      <a href="https://github.com/maciekKuc"target="_blank" ><button class='btn btn-success btn-mein'><i class="fa fa-github fa-fw">      </i>Github</button></a>
-      <a href="https://www.freecodecamp.org/fccf39fb52e-465e-496f-84d8-73cb7093e73a" target="_blank"><button class='btn btn-success btn-mein'><i class="fa fa-free-code-camp fa-fw"></i> fCC</button></a>
-      </div>
-  </div>
+    <div class="footer__container">
+      <a href="https://www.linkedin.com/in/maciej-ku%C4%87mierowski-aaaa87b9/" class="footer__button" target="_blank">
+        <img src="img/linkedin.svg" class="footer__icon" alt="linkedin icon">
+        Linkedin 
+      </a>
+      <a href="https://github.com/maciekKuc" class="footer__button" target="_blank">
+        <img src="img/github-sign.svg" class="footer__icon" alt="github icon">
+        Github 
+      </a>
+    </div>
+    <div class="footer__credit mb-lg">Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" heading-big="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/"           heading-big="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"          heading-big="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+  </footer>
+  <script type="text/javascript" src="./src/main.js"></script>
 </body>
 </html>

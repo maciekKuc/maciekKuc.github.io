@@ -1,0 +1,37 @@
+.heading{
+
+	&--small{
+		font-size: 1.9rem;
+	}
+
+	&--big{
+		font-size: 2.5rem;
+	}
+
+	&--center{
+		text-align: center;
+	}
+
+}
+
+.paragraph{
+	font-size: 1.6rem;
+	line-height: 2;
+
+	&--center{
+		text-align: center;
+	}
+}
+
+.text--white{
+	color: $text--white;
+}
+
+.mb-sm{ margin-bottom: 2rem; }
+.mb-md{ margin-bottom: 3rem; }
+.mb-lg{ margin-bottom: 4rem; }
+.mb-hg{ margin-bottom: 8rem; }
+.mb-md{ margin-bottom: 3rem; }
+.mt-hg{ margin-top: 9rem; }
+.mt-lg{ margin-top: 4rem; }
+.mt-sm{ margin-top: 2rem; }
