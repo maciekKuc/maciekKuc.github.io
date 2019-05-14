@@ -278,7 +278,7 @@ a {
   .project__card {
     height: 300px;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-    background-size: contain;
+    background-size: cover;
     background-position: 0 3rem;
     background-repeat: no-repeat;
     position: relative;
